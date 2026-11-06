@@ -279,7 +279,7 @@ footer .zh{font-size:2rem;color:var(--red)}
       <div class="stat"><b>22</b><span>noites</span></div>
       <div class="stat"><b>6</b><span>cidades</span></div>
       <div class="stat"><b>4</b><span>viajantes</span></div>
-      <div class="stat"><b data-v="57000"></b><span data-unit="Meta"></span></div>
+      <div class="stat"><b>R$ 26.000</b><span>Meta por pessoa</span></div>
     </div>
    </div>
    <figure class="hero-photo">
@@ -356,31 +356,28 @@ footer .zh{font-size:2rem;color:var(--red)}
       <div class="eyebrow">04 · Orçamento</div>
       <h2>Quanto custa a viagem</h2>
       <p>Cada casal tem orçamento próprio e idêntico. Use o seletor no topo para ver os valores de um casal ou do grupo inteiro. <span class="unit-note" data-unit="Valores"></span></p>
+      <p class="note">Valores pesquisados em preços reais de 2025 e 2026 para novembro, convertidos com folga: US$ 1 = R$ 5,30, ¥ 1 = R$ 0,76 e HK$ 1 = R$ 0,69.</p>
     </div>
 
     <div class="total-block">
-      <div class="total-card accent"><span>Cenário-base (passagens R$ 15 mil por casal)</span><b data-v="55500"></b><span data-unit="Total"></span></div>
-      <div class="total-card"><span>Meta arredondada</span><b data-v="57000"></b><span>Absorve oscilações de preço</span></div>
-      <div class="total-card"><span>Meta recomendada</span><b data-v="60000,65000"></b><span>Com passagens entre R$ 15 e 20 mil por casal</span></div>
+      <div class="total-card accent"><span>Meta de economia</span><b data-v="52000"></b><span>R$ 26.000 por pessoa</span></div>
+      <div class="total-card"><span>Orçamento estimado</span><b data-v="51700"></b><span>R$ 25.850 por pessoa, com folga em cada categoria</span></div>
+      <div class="total-card"><span>Passagens ida e volta</span><b data-v="15000"></b><span>Brasil → China → Brasil, via Etiópia</span></div>
     </div>
 
     <div class="split">
       <div class="panel">
-        <h4>Composição do cenário-base</h4>
+        <h4>Composição do orçamento</h4>
         <div class="bars" id="bars"></div>
       </div>
       <div class="panel">
-        <h4>Cenários de passagens</h4>
+        <h4>Resumo por categoria</h4>
         <div class="tbl-wrap"><table>
-          <thead><tr><th>Categoria</th><th class="v">R$ 15 mil</th><th class="v">R$ 23 mil</th></tr></thead>
-          <tbody>
-            <tr><td>Demais despesas e reserva</td><td class="v" data-v="40500"></td><td class="v" data-v="40500"></td></tr>
-            <tr><td>Passagens internacionais</td><td class="v" data-v="15000"></td><td class="v" data-v="23000"></td></tr>
-            <tr class="total"><td>Total</td><td class="v" data-v="55500"></td><td class="v" data-v="63500"></td></tr>
-          </tbody>
+          <thead><tr><th>Categoria</th><th class="v">Estimativa</th><th class="v">Orçamento</th></tr></thead>
+          <tbody id="t-budget"></tbody>
         </table></div>
-        <p class="note">Sem internet: Ana, Claudio e Ana Paula usam o roaming da Claro sem custo extra, e o eSIM do Vinicius entra só no orçamento do casal 1.</p>
-        <p class="note">O cenário de R$ 23 mil por casal considera R$ 12 mil na ida e R$ 11 mil na volta. Se os voos chegarem nesse valor, a meta segura sobe para <span data-v="65000,70000"></span>. O orçamento antigo de R$ 33 mil por casal não cobre seis cidades, 22 noites, duas Disney e compras.</p>
+        <p class="note">A coluna Orçamento fica um pouco acima da estimativa, porque os preços de 2027 ainda não existem.</p>
+        <p class="note">Internet: Ana, Claudio e Ana Paula usam o roaming da Claro sem custo extra. O eSIM do Vinicius, cerca de R$ 120, entra só no casal 1.</p>
       </div>
     </div>
 
@@ -391,7 +388,7 @@ footer .zh{font-size:2rem;color:var(--red)}
           <thead><tr><th>Cidade</th><th class="v">Hotel</th><th class="v">Alimentação</th></tr></thead>
           <tbody id="t-hotel-food"></tbody>
         </table></div>
-        <p class="note">Hospedagem confortável e refeições de nível intermediário. Para mais folga, a meta é <span data-v="14000,16000"></span> em hotéis e <span data-v="6000,7000"></span> em alimentação.</p>
+        <p class="note">Hospedagem confortável e refeições de nível intermediário. O orçamento usa <span data-v="11000"></span> em hotéis e <span data-v="6500"></span> em alimentação. Médias de hotéis 4 estrelas na Kayak: Hong Kong cerca de US$ 144, Chengdu cerca de US$ 90 e Chongqing cerca de US$ 60 por noite.</p>
       </div>
       <div class="panel">
         <h4>Atrações pagas, incluindo as duas Disney</h4>
@@ -399,7 +396,7 @@ footer .zh{font-size:2rem;color:var(--red)}
           <thead><tr><th>Cidade</th><th class="v">Estimativa</th></tr></thead>
           <tbody id="t-attr"></tbody>
         </table></div>
-        <p class="note">Sem souvenirs e sem acesso prioritário. A sugestão para atrações é separar <span data-v="6500"></span>. O orçamento final usa <span data-v="6000"></span>, então vale reforçar essa linha se sobrar dinheiro na reserva.</p>
+        <p class="note">Sem souvenirs e sem acesso prioritário. O orçamento usa <span data-v="5500"></span>. Disney de Hong Kong em tarifa de dia de semana (HK$ 669–759 por pessoa) e de Shanghai em Regular ou Regular Plus (¥ 475–599 por pessoa).</p>
       </div>
     </div>
 
@@ -409,28 +406,28 @@ footer .zh{font-size:2rem;color:var(--red)}
         <div class="tbl-wrap"><table>
           <thead><tr><th>Trecho</th><th>Meio</th><th class="v">Valor</th></tr></thead>
           <tbody>
-            <tr><td>Hong Kong → Shenzhen</td><td>Trem-bala</td><td class="v" data-v="115"></td></tr>
-            <tr><td>Shenzhen → Chengdu</td><td>Avião</td><td class="v" data-v="1100,1300"></td></tr>
-            <tr><td>Chengdu → Chongqing</td><td>Trem-bala</td><td class="v" data-v="140,390"></td></tr>
-            <tr><td>Chongqing → Huangshan</td><td>Avião</td><td class="v" data-v="1300,1600"></td></tr>
-            <tr><td>Huangshan → Shanghai</td><td>Trem-bala</td><td class="v" data-v="290,350"></td></tr>
-            <tr class="total"><td colspan="2">Total</td><td class="v" data-v="2945,3755"></td></tr>
+            <tr><td>Hong Kong → Shenzhen</td><td>Trem-bala</td><td class="v" data-v="110,130"></td></tr>
+            <tr><td>Shenzhen → Chengdu</td><td>Avião</td><td class="v" data-v="900,1200"></td></tr>
+            <tr><td>Chengdu → Chongqing</td><td>Trem-bala</td><td class="v" data-v="185,265"></td></tr>
+            <tr><td>Chongqing → Huangshan</td><td>Avião</td><td class="v" data-v="900,1600"></td></tr>
+            <tr><td>Huangshan → Shanghai</td><td>Trem-bala</td><td class="v" data-v="315,410"></td></tr>
+            <tr class="total"><td colspan="2">Total</td><td class="v" data-v="2410,3605"></td></tr>
           </tbody>
         </table></div>
-        <p class="note">Reserva recomendada: <span data-v="4000"></span>. Confirmar o voo direto Chongqing–Huangshan quando abrirem as vendas para novembro de 2027. Sem voo conveniente, o trecho vira trem com conexão.</p>
+        <p class="note">O orçamento usa <span data-v="3200"></span>. Voo Shenzhen–Chengdu a partir de US$ 69 por pessoa e trem Chengdu–Chongqing por ¥ 121–175. Chongqing–Huangshan tem só cerca de 3 voos diretos por semana (West Air, segunda, quarta e sexta), e 15/11/2027 cai numa segunda. Sem voo nesse dia, o trecho vira trem com conexão.</p>
       </div>
       <div class="panel">
         <h4>Transporte dentro das cidades</h4>
         <div class="tbl-wrap"><table>
           <thead><tr><th>Cidade</th><th class="v">Metrô, ônibus e app</th></tr></thead>
           <tbody>
-            <tr><td>Hong Kong</td><td class="v" data-v="350,500"></td></tr>
-            <tr><td>Shenzhen</td><td class="v" data-v="150,250"></td></tr>
-            <tr><td>Chengdu</td><td class="v" data-v="150,250"></td></tr>
-            <tr><td>Chongqing</td><td class="v" data-v="250,400"></td></tr>
-            <tr><td>Huangshan</td><td class="v" data-v="250,400"></td></tr>
-            <tr><td>Shanghai</td><td class="v" data-v="350,550"></td></tr>
-            <tr class="total"><td>Total</td><td class="v" data-v="1500,2350"></td></tr>
+            <tr><td>Hong Kong</td><td class="v" data-v="250,350" ></td></tr>
+            <tr><td>Shenzhen</td><td class="v" data-v="100,150" ></td></tr>
+            <tr><td>Chengdu</td><td class="v" data-v="150,200" ></td></tr>
+            <tr><td>Chongqing</td><td class="v" data-v="200,300" ></td></tr>
+            <tr><td>Huangshan</td><td class="v" data-v="250,400" ></td></tr>
+            <tr><td>Shanghai</td><td class="v" data-v="300,450" ></td></tr>
+            <tr class="total"><td>Total</td><td class="v" data-v="1250,1850" ></td></tr>
           </tbody>
         </table></div>
         <p class="note">Planejado para conforto, sem depender só de metrô e caminhada. Em Huangshan inclui margem para transfer local.</p>
@@ -455,7 +452,7 @@ footer .zh{font-size:2rem;color:var(--red)}
         <h4>Conectividade e seguro</h4>
         <div class="tbl-wrap"><table>
           <tbody>
-            <tr><td>eSIM para China · Vinicius</td><td class="v">R$ 100–225</td></tr>
+            <tr><td>eSIM para China · Vinicius</td><td class="v">R$ 80–160</td></tr>
             <tr><td>Claro em roaming · Ana, Claudio e Ana Paula</td><td class="v free">Sem custo</td></tr>
             <tr><td>Seguro viagem</td><td class="v" data-v="600,1000"></td></tr>
           </tbody>
@@ -472,7 +469,7 @@ footer .zh{font-size:2rem;color:var(--red)}
     <div class="sec-head">
       <div class="eyebrow">05 · Poupança</div>
       <h2>Quanto cada casal precisa guardar</h2>
-      <p>Ajuste o preço das passagens que cada casal encontrar e quanto já foi guardado. Os valores ficam salvos só neste navegador.</p>
+      <p>Informe quanto cada casal já guardou e em quantos meses quer completar a meta. Os valores ficam salvos só neste navegador.</p>
     </div>
     <div class="calc" id="calc"></div>
     <div class="group-sum">
@@ -483,21 +480,21 @@ footer .zh{font-size:2rem;color:var(--red)}
 
     <div class="split" style="margin-top:40px">
       <div class="panel">
-        <h4>Referência: meta de R$ 60 mil por casal</h4>
+        <h4>Referência: meta de R$ 52 mil por casal</h4>
         <div class="tbl-wrap"><table>
           <thead><tr><th>Prazo</th><th class="v">Economia mensal</th></tr></thead>
           <tbody>
-            <tr><td>10 meses</td><td class="v" data-v="6000"></td></tr>
-            <tr><td>11 meses</td><td class="v" data-v="5455"></td></tr>
-            <tr><td>12 meses</td><td class="v" data-v="5000"></td></tr>
-            <tr><td>13 meses</td><td class="v" data-v="4615"></td></tr>
+            <tr><td>10 meses</td><td class="v" data-v="5200"></td></tr>
+            <tr><td>11 meses</td><td class="v" data-v="4727"></td></tr>
+            <tr><td>12 meses</td><td class="v" data-v="4333"></td></tr>
+            <tr><td>13 meses</td><td class="v" data-v="4000"></td></tr>
           </tbody>
         </table></div>
         <p class="note">Sem considerar rendimento de investimentos. <span data-unit="Valores"></span>.</p>
       </div>
       <div class="panel">
         <h4>Prioridade</h4>
-        <div class="callout red" style="margin-top:0"><b>Comprar as passagens internacionais primeiro</b><span>Elas são a maior despesa e a mais variável. A diferença entre R$ 15 mil e R$ 23 mil por casal muda a meta inteira do grupo em R$ 16 mil.</span></div>
+        <div class="callout red" style="margin-top:0"><b>Passagens internacionais primeiro</b><span>São a maior despesa: R$ 15 mil por casal, ida e volta. Garantir esse preço cedo deixa o resto do orçamento mais previsível.</span></div>
       </div>
     </div>
   </div>
@@ -608,58 +605,58 @@ const CITIES=[
 {id:"hk",name:"Hong Kong",zh:"香港",nights:5,dates:"02–07 nov",c:"#e3262f",t:[19,25],
  climate:"Clima agradável, com pouca chuva comparado ao verão. Roupas leves e casaco fino à noite.",
  intro:"Chegada internacional. Merece pelo menos quatro dias inteiros de atividades, incluindo um dia todo na Disney.",
- attr:[["Victoria Peak Tram + Sky Terrace",250,300],["Ngong Ping 360 (teleférico)",400,500],["Big Buddha e vilarejo Ngong Ping"],["Star Ferry",10,25],["Avenue of Stars"],["Tsim Sha Tsui"],["Mong Kok e Ladies Market"],["Temple Street Night Market"],["Man Mo Temple"],["M+ Museum",250,300,1]],
- attrNote:"Peak Tram, Ngong Ping e museus usam tarifas atuais e podem mudar até 2027.",
+ attr:[["Victoria Peak Tram + Sky Terrace",200,230],["Ngong Ping 360 (teleférico)",360,400],["Big Buddha e vilarejo Ngong Ping"],["Star Ferry",10,15],["Avenue of Stars"],["Tsim Sha Tsui"],["Mong Kok e Ladies Market"],["Temple Street Night Market"],["Man Mo Temple"],["M+ Museum",160,170,1]],
+ attrNote:"Tarifas atuais convertidas com HK$ 1 = R$ 0,69. Podem subir até 2027.",
  hotelNote:"Ficar em Kowloon, de preferência perto de Tsim Sha Tsui, Jordan ou Mong Kok, perto do metrô.",
- tiers:[["Econômico, bem localizado",450,600],["3–4 estrelas confortável",650,950],["4–5 estrelas",1000,1500]],
- hotel:[3250,4750],food:[1450,2500],foodDay:[290,500],
- foodBreak:[["Café da manhã",50,90],["Almoço",90,150],["Jantar",120,200],["Lanches e bebidas",30,60]],
- feature:{title:"Hong Kong Disneyland",zh:"迪士尼",lines:[["Ingresso por pessoa","HK$ 759–939"],["Casal, câmbio atual",[1055,1310]],["Previsão para 2027",[1200,1600],1]],note:"Não inclui refeições, lembranças ou acesso prioritário."}
+ tiers:[["Econômico, bem localizado",350,500],["3–4 estrelas confortável",530,770],["4–5 estrelas",800,1300]],
+ hotel:[2650,3850],food:[1650,2750],foodDay:[330,550],
+ foodBreak:[["Café da manhã",40,70],["Almoço",80,130],["Jantar",160,260],["Lanches e bebidas",40,70]],
+ feature:{title:"Hong Kong Disneyland",zh:"迪士尼",lines:[["Ingresso dia de semana, por pessoa","HK$ 669–759"],["Casal, câmbio de referência",[925,1050]],["Previsão para 2027",[1000,1150],1]],note:"Não inclui refeições, lembranças ou acesso prioritário."}
 },
 {id:"sz",name:"Shenzhen",zh:"深圳",nights:2,dates:"07–09 nov",c:"#4cc6a0",t:[17,25],
  climate:"Clima ameno a quente. Ótimo para passeios urbanos e visitas tecnológicas.",
  intro:"A parada da tecnologia, da arquitetura moderna e das compras de eletrônicos.",
- attr:[["Huaqiangbei Electronics Market"],["Ping An Finance Center, observatório",300,350],["Window of the World",300,400],["Shenzhen Museum"],["Civic Center"],["Lianhuashan Park"],["OCT Harbour"]],
+ attr:[["Huaqiangbei Electronics Market"],["Ping An Finance Center, observatório",300,310],["Window of the World",330,340],["Shenzhen Museum"],["Civic Center"],["Lianhuashan Park"],["OCT Harbour"]],
  attrNote:"As duas pagas a priorizar são o observatório do Ping An (¥200 por adulto) e o Window of the World (¥220 por adulto).",
- tiers:[["Econômico",250,350],["Confortável 4 estrelas",400,600],["Superior",650,900]],
- hotel:[800,1200],food:[360,600],foodDay:[180,300],
- tips:["Verba separada de compras: R$ 1.000–2.000 por casal para eletrônicos, se realmente forem comprar.","Em eletrônicos, comparar preço, especificação, garantia internacional, compatibilidade de bandas e autenticidade."]
+ tiers:[["Econômico",200,300],["Confortável 4 estrelas",320,420],["Superior",500,750]],
+ hotel:[640,840],food:[400,640],foodDay:[200,320],
+ tips:["Eletrônicos e acessórios: até R$ 1.000–2.500 por casal, dentro do orçamento de compras.","Em eletrônicos, comparar preço, especificação, garantia internacional, compatibilidade de bandas e autenticidade."]
 },
 {id:"cd",name:"Chengdu",zh:"成都",nights:3,dates:"09–12 nov",c:"#e6b65c",t:[10,17],
  climate:"Mais frio, muitas vezes nublado e úmido. Casaco, calça comprida e tênis confortável.",
  intro:"Uma das cidades mais importantes do roteiro: os pandas e a culinária de Sichuan.",
- attr:[["Chengdu Panda Base",90,100],["Wuhou Shrine",80,90],["Jinli Ancient Street"],["Kuanzhai Alley"],["Taikoo Li"],["Chunxi Road"],["Wenshu Monastery"],["People's Park"],["Du Fu Thatched Cottage",80,90],["Dujiangyan",130,150,1]],
+ attr:[["Chengdu Panda Base",85,85],["Wuhou Shrine",75,80],["Jinli Ancient Street"],["Kuanzhai Alley"],["Taikoo Li"],["Chunxi Road"],["Wenshu Monastery"],["People's Park"],["Du Fu Thatched Cottage",75,80],["Dujiangyan",120,125,1]],
  attrNote:"A base dos pandas custa ¥55 por adulto e exige reserva nominal. Em novembro abre às 8h, e os pandas ficam mais ativos pela manhã.",
- tiers:[["Econômico",180,280],["4 estrelas",300,500],["Superior",550,800]],
- hotel:[900,1500],food:[450,840],foodDay:[150,280],
+ tiers:[["Econômico",150,250],["4 estrelas",320,470],["Superior",500,750]],
+ hotel:[960,1410],food:[480,840],foodDay:[160,280],
  tips:["Provar hot pot, mapo tofu e noodles de Sichuan em restaurantes tradicionais.","Para comida menos picante, pedir wēi là (pouco picante) ou bù là (sem pimenta).","Dujiangyan exige mais deslocamento. Fica como opcional para manter o ritmo confortável."]
 },
 {id:"cq",name:"Chongqing",zh:"重庆",nights:3,dates:"12–15 nov",c:"#d46a3a",t:[11,17],
  climate:"Temperatura agradável, mas úmida e com chance de chuva. Muitas ladeiras e escadarias.",
  intro:"A cidade dos prédios em vários níveis, do metrô que atravessa edifícios e da arquitetura urbana mais impressionante da viagem.",
- attr:[["Hongyadong"],["Liziba Station"],["Jiefangbei"],["Kuixinglou"],["Qiansimen Bridge"],["Ciqikou Ancient Town"],["Three Gorges Museum"],["Yangtze River Cableway",50,60],["Two Rivers Night Cruise",180,280],["Raffles City Exploration Deck",150,300]],
+ attr:[["Hongyadong"],["Liziba Station"],["Jiefangbei"],["Kuixinglou"],["Qiansimen Bridge"],["Ciqikou Ancient Town"],["Three Gorges Museum"],["Yangtze River Cableway",30,45],["Two Rivers Night Cruise",210,300],["Raffles City Exploration Deck",240,280]],
  attrNote:"Quase todos os cartões-postais são gratuitos. O passeio noturno de barco é a experiência paga que vale incluir.",
- tiers:[["Econômico",200,300],["Confortável",350,550],["Superior",600,900]],
- hotel:[1050,1650],food:[450,840],foodDay:[150,280],
+ tiers:[["Econômico",130,220],["Confortável",300,400],["Superior",450,700]],
+ hotel:[900,1200],food:[480,840],foodDay:[160,280],
  tips:["Chongqing é vertical: um mesmo trajeto pode ter escadas, elevadores, passarelas e vários níveis de rua.","Hotel em Jiefangbei, perto do metrô. Usar táxi por aplicativo nos trajetos com muita subida."]
 },
 {id:"hs",name:"Huangshan",sub:"Tangkou",zh:"黄山",nights:2,dates:"15–17 nov",c:"#7fa7d9",t:[1,8],
  climate:"No alto da montanha pode fazer ainda mais frio, principalmente com vento. Segunda pele, casaco térmico, luvas e calçado com boa aderência.",
  intro:"Hospedagem na base, não no topo. Malas grandes ficam no hotel em Tangkou, sobe-se com mochila pequena pelo teleférico Yungu e visitam-se só os pontos mais acessíveis.",
  mountain:[["Entrada da montanha","¥190"],["Ônibus de acesso, ida e volta","¥38"],["Teleférico Yungu, subida e descida","¥160"],["Total por pessoa","¥388"]],
- tiers:[["Econômico",200,300],["Confortável",350,550],["Superior",600,900]],
- hotel:[700,1100],food:[300,500],foodDay:[150,250],
+ tiers:[["Econômico",150,230],["Confortável",230,380],["Superior",450,700]],
+ hotel:[460,760],food:[320,520],foodDay:[160,260],
  tips:["Condição essencial do hotel: guardar as malas de graça e oferecer traslado até o centro de transporte turístico.","Não fazer a trilha completa nem o West Sea Grand Canyon. Mesmo com teleférico há escadarias e trechos de caminhada."]
 },
 {id:"sh",name:"Shanghai",zh:"上海",nights:7,dates:"17–24 nov",c:"#b04fd6",t:[9,18],
  climate:"Outono mais frio, principalmente à noite. Casacos e roupas em camadas.",
  intro:"O encerramento da viagem. Sete noites para a segunda Disneyland e a lista longa de atrações da cidade.",
- attr:[["The Bund"],["Nanjing Road"],["Yu Garden",50,70],["Shanghai Tower",280,320],["Oriental Pearl Tower",260,360],["Huangpu River Cruise",200,250],["Jing'an Temple",80,90],["Shanghai Museum"],["French Concession"],["Tianzifang"],["Zhujiajiao",100,250,1]],
+ attr:[["The Bund"],["Nanjing Road"],["Yu Garden",60,60],["Shanghai Tower",275,275],["Oriental Pearl Tower",300,300],["Huangpu River Cruise",180,230],["Jing'an Temple",75,75],["Shanghai Museum"],["French Concession"],["Tianzifang"],["Zhujiajiao",0,150,1]],
  attrNote:"Yu Garden, Shanghai Tower e Oriental Pearl usam tarifas de 2026.",
  hotelNote:"People's Square, Nanjing Road ou Lujiazui, perto do metrô.",
- tiers:[["Econômico",350,500],["4 estrelas confortável",550,850],["4–5 estrelas superior",900,1400]],
- hotel:[3850,5950],food:[1540,2660],foodDay:[220,380],
- feature:{title:"Shanghai Disneyland",zh:"迪士尼",lines:[["Ingresso a partir de, por pessoa","¥ 475"],["Ingressos básicos 2027",[900,1400],1],["Alimentação no parque",[250,450]],["Souvenirs",[200,500]],["Premier Access, opcional",[500,1200]]],note:"Tarifas variam por data do calendário. Os preços de 2027 ainda não foram divulgados."}
+ tiers:[["Econômico",280,400],["4 estrelas confortável",420,610],["4–5 estrelas superior",750,1200]],
+ hotel:[2940,4270],food:[1540,2660],foodDay:[220,380],
+ feature:{title:"Shanghai Disneyland",zh:"迪士尼",lines:[["Ingresso dia de semana, por pessoa","¥ 475–599"],["Casal, câmbio de referência",[720,910]],["Previsão para 2027",[750,950],1],["Souvenirs, opcional",[200,500]],["Premier Access, opcional",[500,1200]]],note:"Tarifas variam por data do calendário. Os preços de 2027 ainda não foram divulgados."}
 }];
 
 const PLAN=[
@@ -671,11 +668,12 @@ const PLAN=[
 ["sh",[[17,"Trem-bala para Shanghai. The Bund iluminado à noite.","move"],[18,"Nanjing Road, People's Square e Shanghai Museum."],[19,"Shanghai Disneyland, dia inteiro.","park"],[20,"Yu Garden pela manhã. Lujiazui: Shanghai Tower ou Oriental Pearl e cruzeiro no Huangpu."],[21,"French Concession, Tianzifang e Jing'an Temple."],[22,"Zhujiajiao, a cidade d'água, em meio dia.","",1],[23,"Dia livre para compras e para repetir o que mais gostaram."],[24,"Partida.","move"]]]
 ];
 
-const BUDGET=[["Passagens internacionais",15000,1],["Hotéis (22 noites)",13500],["Alimentação",6200],["Atrações e duas Disney",6000],["Compras",4500],["Reserva para imprevistos",4000],["Transporte entre cidades",3500],["Transporte local",2000],["Seguro viagem",800]];
-const ATTR=[["Hong Kong, sem Disney",700,1000],["Hong Kong Disneyland",1200,1600],["Shenzhen",500,800],["Chengdu",300,600],["Chongqing",200,500],["Huangshan",750,900],["Shanghai, sem Disney",600,900],["Shanghai Disneyland",900,1400]];
+const BUDGET=[["Passagens internacionais, ida e volta",15000,1,15000,15000],["Hotéis (22 noites)",11000,0,8550,12330],["Alimentação",6500,0,4870,8250],["Atrações e duas Disney",5500,0,4820,6240],["Compras",4500,0,3000,6000],["Reserva para imprevistos",3500],["Transporte entre cidades",3200,0,2410,3605],["Transporte local",1700,0,1250,1850],["Seguro viagem",800,0,600,1000]];
+const ATTR=[["Hong Kong, sem Disney",570,815],["Hong Kong Disneyland",1000,1150],["Shenzhen",600,700],["Chengdu",240,360],["Chongqing",480,625],["Huangshan",590,700],["Shanghai, sem Disney",590,940],["Shanghai Disneyland",750,950]];
 const PHASES=[["2026-11-01","2027-02-28","Novembro 2026 – fevereiro 2027","Acompanhar passagens internacionais e definir o orçamento."],["2027-03-01","2027-06-30","Março – junho 2027","Escolher hotéis com cancelamento gratuito."],["2027-07-01","2027-09-30","Julho – setembro 2027","Comprar voos internos e organizar os deslocamentos."],["2027-10-01","2027-10-31","Outubro 2027","Reservar atrações, Disney, trens e transfers."]];
 const ESSENTIALS=[["Hong Kong","hotel perto do metrô, para facilitar o acesso à Disney e às atrações."],["Shenzhen","reservar tempo para o mercado tecnológico de Huaqiangbei."],["Chengdu","visitar os pandas pela manhã, quando estão mais ativos."],["Chongqing","hotel em Jiefangbei, evitando deslocamentos desnecessários."],["Huangshan","hotel em Tangkou com guarda-volumes e traslado."],["Shanghai","hotel perto do metrô e um dia inteiro para a Disneyland."]];
-const NON_FLIGHT=40500;
+const NON_FLIGHT=36700;
+const FLIGHTS=15000;
 const PREP=[
 ["Pagamento",[
  ["Alipay","Pagamento padrão no continente, inclusive em táxis e barracas. Vincular cartão internacional e verificar o passaporte no app.",["br","net"]],
@@ -749,7 +747,7 @@ function renderClimate(){
 function renderCities(){
   document.getElementById("cities").innerHTML=CITIES.map((c,i)=>{
     const attr=c.attr?`<div class="panel"><h4>Pontos turísticos · ingresso <span data-unit="para"></span></h4><div class="tbl-wrap"><table><tbody>${c.attr.map(([nm,a,b,opt])=>`<tr><td>${nm}${opt?'<span class="opt">opcional</span>':""}</td><td class="v">${cell(a,b)}</td></tr>`).join("")}</tbody></table></div><p class="note">${c.attrNote}</p></div>`
-      :`<div class="panel"><h4>Custos da montanha · por pessoa</h4><div class="tbl-wrap"><table><tbody>${c.mountain.map(([a,b],j,arr)=>`<tr class="${j===arr.length-1?"total":""}"><td>${a}</td><td class="v">${b}</td></tr>`).join("")}</tbody></table></div><div class="kv"><div><span><span data-unit="Total"></span></span><span data-yuan="776"></span></div><div class="hl"><span>Reservar para o passeio completo</span><span data-v="750,900"></span></div></div><p class="note">Tarifas de referência de 2026 para adultos. A reserva inclui pequenas despesas extras.</p></div>`;
+      :`<div class="panel"><h4>Custos da montanha · por pessoa</h4><div class="tbl-wrap"><table><tbody>${c.mountain.map(([a,b],j,arr)=>`<tr class="${j===arr.length-1?"total":""}"><td>${a}</td><td class="v">${b}</td></tr>`).join("")}</tbody></table></div><div class="kv"><div><span><span data-unit="Total"></span></span><span data-yuan="776"></span></div><div class="hl"><span>Reservar para o passeio completo</span><span data-v="600,700"></span></div></div><p class="note">Tarifas de referência de 2026 para adultos. A reserva inclui pequenas despesas extras.</p></div>`;
     const side=`<div class="panel"><h4>Hotel · por quarto, por noite</h4>${c.hotelNote?`<p class="note">${c.hotelNote}</p>`:""}<div class="kv">${c.tiers.map(([t,a,b])=>`<div><span>${t}</span><span>${cell(a,b)}</span></div>`).join("")}<div class="hl"><span>${c.nights} noites, confortável</span><span>${cell(...c.hotel)}</span></div></div>
       <h4 style="margin-top:8px">Alimentação</h4><div class="kv">${(c.foodBreak||[]).map(([t,a,b])=>`<div><span>${t}</span><span>${cell(a,b)}</span></div>`).join("")}<div><span>Média por dia</span><span>${cell(...c.foodDay)}</span></div><div class="hl"><span>Total na cidade</span><span>${cell(...c.food)}</span></div></div>
       ${c.tips?`<ul class="tips" style="--c:${c.c};margin-top:6px">${c.tips.map(t=>`<li>${t}</li>`).join("")}</ul>`:""}</div>`;
@@ -762,6 +760,7 @@ function renderTables(){
   const at=ATTR.reduce((a,r)=>[a[0]+r[1],a[1]+r[2]],[0,0]);
   document.getElementById("t-attr").innerHTML=ATTR.map(([nm,a,b])=>`<tr><td>${nm}</td><td class="v">${cell(a,b)}</td></tr>`).join("")+`<tr class="total"><td>Total</td><td class="v">${cell(at[0],at[1])}</td></tr>`;
   const mx=Math.max(...BUDGET.map(b=>b[1]));
+  document.getElementById("t-budget").innerHTML=BUDGET.map(([nm,v,,a,b])=>`<tr><td>${nm}</td><td class="v">${a==null?"—":a===b?cell(a):cell(a,b)}</td><td class="v">${cell(v)}</td></tr>`).join("")+`<tr class="total"><td>Total</td><td class="v"></td><td class="v">${cell(BUDGET.reduce((t,r)=>t+r[1],0))}</td></tr>`;
   document.getElementById("bars").innerHTML=BUDGET.map(([nm,v,f])=>`<div class="bar-row ${f?"flight":""}"><span>${nm}</span><div class="track"><div class="fill" style="width:${v/mx*100}%"></div></div><span class="v" data-v="${v}"></span></div>`).join("");
   const now=new Date();
   document.getElementById("phases").innerHTML=PHASES.map(([s,e,w,t])=>{
@@ -772,14 +771,14 @@ function renderTables(){
   document.getElementById("check").addEventListener("change",e=>{const d=store.get("china27-check",{});d[e.target.id.slice(2)]=e.target.checked;store.set("china27-check",d)});
 }
 
-const COUPLES=[["c1","Vinicius & Ana","龍","",160],["c2","Claudio & Ana Paula","鳳","gold",0]];
+const COUPLES=[["c1","Vinicius & Ana","龍","",120],["c2","Claudio & Ana Paula","鳳","gold",0]];
 const months=()=>{const now=new Date(),dep=new Date(2027,10,2);return Math.max(1,(dep.getFullYear()-now.getFullYear())*12+dep.getMonth()-now.getMonth())};
 function renderCalc(){
   const st=store.get("china27-calc",{});
   document.getElementById("calc").innerHTML=COUPLES.map(([id,name,s,cls,net])=>{
-    const v=st[id]||{fl:15000,saved:0,mo:months()};
-    return `<div class="calc-card" data-id="${id}"><header><div class="seal ${cls}">${s}</div><h3>${name}</h3></header>${net?'<p class="note">Inclui o eSIM do Vinicius, cerca de R$ 160.</p>':'<p class="note">Internet pelo roaming Claro, sem custo extra.</p>'}
-    <div class="field"><label for="${id}-fl">Passagens internacionais do casal <output id="${id}-flo"></output></label><input type="range" id="${id}-fl" min="12000" max="26000" step="500" value="${v.fl}"></div>
+    const v=Object.assign({saved:0,mo:months()},st[id]);
+    return `<div class="calc-card" data-id="${id}"><header><div class="seal ${cls}">${s}</div><h3>${name}</h3></header>${net?'<p class="note">Inclui o eSIM do Vinicius, cerca de R$ 120.</p>':'<p class="note">Internet pelo roaming Claro, sem custo extra.</p>'}
+
     <div class="field"><label for="${id}-mo">Meses para guardar <output id="${id}-moo"></output></label><input type="range" id="${id}-mo" min="1" max="13" step="1" value="${v.mo}"></div>
     <div class="field"><label for="${id}-sv">Já guardado (R$)</label><input type="number" id="${id}-sv" min="0" step="100" value="${v.saved}" inputmode="numeric"></div>
     <div class="progress"><i id="${id}-pg"></i></div>
@@ -790,10 +789,9 @@ function renderCalc(){
 function updateCalc(){
   const st={};let gT=0,gS=0,gM=0;
   COUPLES.forEach(([id,,,,net])=>{
-    const fl=+document.getElementById(id+"-fl").value,mo=+document.getElementById(id+"-mo").value,sv=Math.max(0,+document.getElementById(id+"-sv").value||0);
+    const fl=FLIGHTS,mo=+document.getElementById(id+"-mo").value,sv=Math.max(0,+document.getElementById(id+"-sv").value||0);
     const tot=fl+NON_FLIGHT+net,left=Math.max(0,tot-sv),mon=left/mo,pct=Math.min(100,sv/tot*100);
-    st[id]={fl,mo,saved:sv};gT+=tot;gS+=sv;gM+=mon;
-    document.getElementById(id+"-flo").textContent=money(fl,null,1);
+    st[id]={mo,saved:sv};gT+=tot;gS+=sv;gM+=mon;
     document.getElementById(id+"-moo").textContent=mo+(mo>1?" meses":" mês");
     document.getElementById(id+"-tot").textContent=money(tot,null,1);
     document.getElementById(id+"-left").textContent=money(left,null,1);
@@ -809,7 +807,7 @@ function updateCalc(){
 
 function paint(){
   document.querySelectorAll("[data-v]").forEach(el=>{const [a,b]=el.dataset.v.split(",").map(Number);el.textContent=money(a,b)});
-  document.querySelectorAll("[data-yuan]").forEach(el=>{const y=+el.dataset.yuan*mult;el.textContent=`¥${n(y)} ≈ ${money(635*mult,null,1)}`});
+  document.querySelectorAll("[data-yuan]").forEach(el=>{const y=+el.dataset.yuan*mult;el.textContent=`¥${n(y)} ≈ ${money(590*mult,null,1)}`});
   const who=mult===1?"para 2 pessoas (um casal)":"para 4 pessoas (os dois casais)";
   document.querySelectorAll("[data-unit]").forEach(el=>{const p=el.dataset.unit;el.textContent=p==="para"?(mult===1?"para 2":"para 4"):`${p} ${who}`});
 }
